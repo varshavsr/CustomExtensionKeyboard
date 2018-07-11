@@ -85,10 +85,10 @@ class KeyboardViewController: UIInputViewController {
             if let button = view as? UIButton {
                 let buttonTitle = button.titleLabel!.text
                 if capsLockOn {
-                    let text = buttonTitle!.uppercased
+                    let text = buttonTitle!.uppercased()
                     button.setTitle("\(text)", for: .normal)
                 } else {
-                    let text = buttonTitle!.lowercased
+                    let text = buttonTitle!.lowercased()
                     button.setTitle("\(text)", for: .normal)
                 }
             }
